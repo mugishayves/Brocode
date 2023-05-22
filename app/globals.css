@@ -2,19 +2,42 @@
 @tailwind components;
 @tailwind utilities;
 
-
 @font-face {
   font-family: TiltNeon;
-  src: url("/fonts/TiltNeon-Regular.ttf"); 
+  src: url("/fonts/TiltNeon-Regular.ttf");
 }
 
-*{
+* {
   font-family: TiltNeon;
   color: white;
+  overflow-x: hidden;
+}
+
+.bg-div {
+  background-image: linear-gradient(
+    -45deg,
+    rgb(189, 52, 254) 50%,
+    rgb(71, 202, 255) 50%
+  );
+}
+.bg-div img {
+  filter: none;
+}
+
+.logo-text {
+  /* background: linear-gradient(42.75deg, #ff00c7 33.71%, #ad00ff 73.08%) ;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text; */
+  background: linear-gradient(45.64deg, #ff00c7 27.48%, #5b04c7 48.45%), #ffffff;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  height: fit-content;
 }
 
 html,
 body,
-:root{
+:root {
   height: 100%;
 }

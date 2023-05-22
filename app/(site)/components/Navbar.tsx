@@ -2,9 +2,10 @@
 import Link from 'next/link'
 import React from 'react'
 import Image from "next/image"
+import {BiDownArrow} from "react-icons/bi"
 const Navbar = () => {
 	return (
-		<div className='w-[90vw] mx-5 mt-2 rounded-3xl  fixed bg-[rgba(18,19,22,.8)] flex flex-row items-center border-[2px] justify-between px-8'>
+		<div className='w-[90vw] mx-5 mt-2 rounded-3xl  fixed bg-[rgba(18,19,22,.8)] flex flex-row items-center  justify-between px-8'>
 			<div className='flex flex-row items-center'>
 				<Link href={""}>
 					<Image src="/Brocode.svg" alt="logo" width={150} height={150} />
@@ -14,9 +15,7 @@ const Navbar = () => {
 						<Link href={""}>Features</Link>
 					</li>
 					<li>
-						<button>
-							<span>Resources</span>
-						</button>
+					<Link href={""}>Docs</Link>
 					</li>
 					<li>
 						<Link href={""}>Examples</Link>
