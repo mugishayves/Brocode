@@ -1,11 +1,12 @@
-import { Form } from "react-router-dom"
+import Form from "./components/Form"
+
 
 const page = () => {
-  return (
-    <div className="flex items-center justify-center">
-        <Form />
-    </div>
-  )
+	return (
+		<div className="flex flex-col  justify-center items-center h-full w-full" >
+			<Form />
+		</div>
+	)
 }
 
 export default page
